@@ -1,14 +1,25 @@
 
 
 <div class="text-layout">
-
+    
     <h1>{{nombre}}</h1>
 
 </div>
 
 
 
-<button pButton
+<button pButton 
+class="p-button-help"
  (click)="cambiarNombre()"
  label="Cambiar Nombre"
+ icon="pi pi-check" iconPos="right"
+ 
  ></button>
+
+
+
+ <p-card
+    [header]="nombre | titlecase"
+    subheader="Tenreiro">
+    Esto es un ejemplo de tarjeta
+</p-card>

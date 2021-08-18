@@ -5,13 +5,14 @@ import { AppComponent } from './app.component';
 
 //PrimeNG
 import {ButtonModule} from 'primeng/button';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, ButtonModule
+    BrowserModule, ButtonModule, CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
