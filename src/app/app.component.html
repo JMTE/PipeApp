@@ -1,5 +1,14 @@
 
 
-<h1>Hola Pipe</h1>
+<div class="text-layout">
 
-<button pButton > Cambiar nombre </button>
+    <h1>{{nombre}}</h1>
+
+</div>
+
+
+
+<button pButton
+ (click)="cambiarNombre()"
+ label="Cambiar Nombre"
+ ></button>
