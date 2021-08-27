@@ -30,3 +30,61 @@
     
 </div>
 
+<div class="text-layout">
+    <h1>
+       Date | Fecha 
+    </h1>
+    <p>
+       Pipe para mostrar correctamente la fecha
+    </p>
+
+    <div class="grid">
+        <div class="col-6">
+            <p-card header="Fecha">
+
+                <ul>
+                    <li>
+                        Fecha
+                    </li>
+                    <li>
+                        Fecha | date
+                    </li>
+                    <li>
+                        Fecha | date: short
+                    </li>
+                    <li>
+                        Fecha | date: long
+                    </li>
+                    <li>
+                        Fecha | date: personalizado
+                    </li>
+                </ul>
+
+            </p-card>
+        </div>
+        <div class="col-6">
+            <p-card header="Fecha">
+
+                <ul>
+                    <li>
+                        {{fecha}}
+                    </li>
+                    <li>
+                        {{fecha|date}}
+                    </li>
+                    <li>
+                        {{fecha|date:"short"}}
+                    </li>
+                    <li>
+                        {{fecha|date:"long"}}
+                    </li>
+                    <li>
+                        {{fecha|date:"dd LLLL yyyy HH:MM"}}
+                    </li>
+                </ul>
+
+            </p-card>
+        </div>
+    </div>
+</div>
+

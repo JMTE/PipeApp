@@ -13,5 +13,7 @@ export class BasicosComponent{
   nombreUpper:string="TENREIRO"
   nombreCompleto:string="JoSe maRia TeNrEiro"
 
+  fecha:Date = new Date(); //el dia de hoy
+
  
 }
