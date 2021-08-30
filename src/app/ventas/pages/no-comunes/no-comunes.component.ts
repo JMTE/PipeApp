@@ -10,6 +10,14 @@ import {FieldsetModule} from 'primeng/fieldset';
 })
 export class NoComunesComponent implements OnInit {
 
+  nombre:string="Jose Maria";
+  genero:string="masculino";
+  invitacionMap={
+
+    "masculino":"Bienvenido",
+    "femenino":"Bienvenida"
+  }
+
   constructor() { }
 
   ngOnInit(): void {
