@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {FieldsetModule} from 'primeng/fieldset';
+
 @Component({
   selector: 'app-no-comunes',
   templateUrl: './no-comunes.component.html',

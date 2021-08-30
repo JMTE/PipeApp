@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PrimeIcons } from 'primeng/api';
+import { PrimeNGConfig } from 'primeng/api';
 
 
 
@@ -7,16 +9,14 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'PipesApp';
-
-  nombre:string="Jose"
+export class AppComponent implements OnInit {
+ constructor(private PrimeNGConfig :PrimeNGConfig){
 
 
-  cambiarNombre(){
-
-     
-      console.log(this.nombre);
-      
-  }
+ }
+ 
+ ngOnInit() {
+  
+  this.PrimeNGConfig.ripple=true;
+ }
 }
