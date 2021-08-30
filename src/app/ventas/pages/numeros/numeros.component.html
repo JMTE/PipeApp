@@ -16,4 +16,23 @@
 
         </p-card>
     </div>
+
+    <div class="col-4">
+        <p-card header="Ventas brutas"
+        subheader="Ventas brutas del año">
+       
+        {{ventasNetas + ventasNetas*0.21|currency:"EUR":"symbol-narrow":"1.2-2"}} 
+
+        </p-card>
+        
+    </div>
+    <div class="col-4">
+        <p-card header="Impuestos"
+        subheader="Impuestos del año">
+       
+        {{porcentaje|percent:"1.2-2"}} 
+
+        </p-card>
+        
+    </div>
 </div>
