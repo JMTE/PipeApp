@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import {FieldsetModule} from 'primeng/fieldset';
 
+
+import {ButtonModule} from 'primeng/button';
+
 @Component({
   selector: 'app-no-comunes',
   templateUrl: './no-comunes.component.html',
@@ -33,6 +36,23 @@ export class NoComunesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cambiarCliente(){
+
+    if (this.genero=="masculino"){
+      this.genero="femenino";
+      this.nombre="Sofia"
+    }else if (this.genero=="femenino"){
+      this.genero="masculino";
+      this.nombre="Jose Maria"
+    }
+  }
+
+  borrarCliente(){
+
+    this.clientes.splice(0,1)
+
   }
 
 }

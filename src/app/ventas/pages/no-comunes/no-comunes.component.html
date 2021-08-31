@@ -11,8 +11,14 @@
     <div class="col md:col-6 ">
 
         <p-fieldset legend="i18nSelect Pipe" [toggleable]=true>
-           {{genero|i18nSelect:invitacionMap}}
-            {{nombre}}
+            <p>{{genero|i18nSelect:invitacionMap}}
+                {{nombre}}
+            </p>
+            <button  pButton type="button"  label="Cambiar persona"   
+            class="p-button-help p-button-raised p-button-rounded"
+            (click)="cambiarCliente()">
+                
+            </button>
         </p-fieldset>
         
     </div>
@@ -20,8 +26,15 @@
 
         <p-fieldset legend="i18nPlural Pipe" [toggleable]=true
         >
+        <p>
             Actualmente  {{clientes.length|i18nPlural:clientesMap}} .
            
+        </p>
+        <button  pButton type="button" label="Borrar Cliente" class="p-button-raised p-button-rounded"
+        (click)="borrarCliente()">
+                
+        </button>
+            
         </p-fieldset>
         
     </div>
