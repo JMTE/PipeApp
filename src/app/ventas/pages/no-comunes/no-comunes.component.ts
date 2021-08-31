@@ -42,6 +42,31 @@ export class NoComunesComponent implements OnInit {
     direccion:" Madrid, España"
    }
 
+   //JSON Pipe
+
+   heroes =[
+     {
+     nombre: "Goku",
+    vuela:true
+  }, 
+    {
+      nombre: "Ironman",
+      vuela:true
+},
+    {
+     nombre:"Vegeta",
+    vuela:true
+}, 
+   {
+     nombre:"Thor",
+    vuela:false
+  }, 
+   {
+     nombre:"Batman",
+  vuela:false
+}
+]
+
 
   constructor() { }
 
