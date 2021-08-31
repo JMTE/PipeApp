@@ -3,6 +3,10 @@
         Pipes Personalizados
     </h1>
     <p>
-        Pipes creados por el usuario: {{nombre|mayusculas}}
+        Pipes creados por el usuario: {{nombre|mayusculas:cambiaMayusculas}}
     </p>
+
+    <button pButton  icon="pi pi-check" label="Toogle Mayúsculas" class="p-button-warning" (click)="cambiaMay()">
+       
+    </button>
 </div>

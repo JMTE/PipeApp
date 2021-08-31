@@ -8,9 +8,13 @@ import { Pipe, PipeTransform } from "@angular/core";
 
 export class MayusculasPipe implements PipeTransform{
 
-    transform(value:string):string{
-
-        return value.toUpperCase();
+    transform(value:string, funciona:boolean=true):string{
+        if(funciona){
+            return value.toUpperCase();
+        }else{
+            return value;
+        }
+       
     }
 
 
