@@ -10,13 +10,25 @@ import {FieldsetModule} from 'primeng/fieldset';
 })
 export class NoComunesComponent implements OnInit {
 
+  //i18nSelect
   nombre:string="Jose Maria";
   genero:string="masculino";
   invitacionMap={
 
     "masculino":"Bienvenido",
     "femenino":"Bienvenida"
+
   }
+
+   //i18PluralSelect
+
+   clientes:string[]=["Jose", "Maria","Juan", "Sofia"]
+   clientesMap={
+    "=0": "No tenemos ningun cliente esperando",
+    "=1": "tenemos un cliente esperando",
+    "other":"tenemos # clientes esperando"
+    
+   }
 
   constructor() { }
 

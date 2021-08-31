@@ -18,8 +18,10 @@
     </div>
     <div class="col md:col-6 ">
 
-        <p-fieldset legend="i18nPlural Pipe" [toggleable]=true>
-            Content
+        <p-fieldset legend="i18nPlural Pipe" [toggleable]=true
+        >
+            Actualmente  {{clientes.length|i18nPlural:clientesMap}} .
+           
         </p-fieldset>
         
     </div>
