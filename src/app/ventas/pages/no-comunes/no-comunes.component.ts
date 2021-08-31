@@ -4,6 +4,7 @@ import {FieldsetModule} from 'primeng/fieldset';
 
 
 import {ButtonModule} from 'primeng/button';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -66,6 +67,17 @@ export class NoComunesComponent implements OnInit {
   vuela:false
 }
 ]
+
+// Async Pipe
+
+  miObservable=interval(1000); //0,1,2,3,4,5,...,1000
+
+  valorPromesa=new Promise ((resolve,reject ) =>{
+
+    setTimeout(() => {
+      resolve("Tenemos el dato de la promesa")
+    }, 3500);
+  })
 
 
   constructor() { }
